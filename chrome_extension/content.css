@@ -1,0 +1,133 @@
+/* ArmIDM v3.0 Modern Floating Video Download Panel */
+#armidm-floating-container,
+#pyidm-floating-container {
+  position: fixed !important;
+  top: 16px;
+  right: 16px;
+  z-index: 2147483647 !important;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  user-select: none !important;
+  pointer-events: auto !important;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.45));
+}
+
+.armidm-main-btn,
+.pyidm-main-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%) !important;
+  color: #f8fafc !important;
+  padding: 7px 13px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(96, 165, 250, 0.5) !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.6) !important;
+  cursor: pointer !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  letter-spacing: 0.2px !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.18s ease !important;
+}
+
+.armidm-main-btn:hover,
+.pyidm-main-btn:hover {
+  background: linear-gradient(135deg, #1e293b 0%, #1d4ed8 50%, #3b82f6 100%) !important;
+  border-color: rgba(147, 197, 253, 0.85) !important;
+  transform: translateY(-1px) !important;
+}
+
+.armidm-badge,
+.pyidm-badge {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  padding: 1px 7px !important;
+  border-radius: 999px !important;
+  font-size: 11px !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.armidm-close-x,
+.pyidm-close-x {
+  margin-left: 2px !important;
+  opacity: 0.75 !important;
+  font-weight: bold !important;
+  padding: 1px 5px !important;
+  border-radius: 50% !important;
+  color: #cbd5e1 !important;
+  transition: all 0.15s ease !important;
+}
+
+.armidm-close-x:hover,
+.pyidm-close-x:hover {
+  opacity: 1 !important;
+  background: rgba(239, 68, 68, 0.25) !important;
+  color: #fca5a5 !important;
+}
+
+.armidm-dropdown,
+.pyidm-dropdown {
+  margin-top: 8px !important;
+  background: rgba(15, 23, 42, 0.96) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(51, 65, 85, 0.9) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65) !important;
+  width: 340px !important;
+  max-height: 290px !important;
+  overflow-y: auto !important;
+  display: none !important;
+  backdrop-filter: blur(12px) !important;
+  padding: 4px 0 !important;
+}
+
+.armidm-dropdown.open,
+.pyidm-dropdown.open {
+  display: block !important;
+}
+
+.armidm-stream-item,
+.pyidm-stream-item {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 9px 13px !important;
+  border-bottom: 1px solid rgba(30, 41, 59, 0.85) !important;
+  cursor: pointer !important;
+  transition: background 0.15s ease !important;
+}
+
+.armidm-stream-item:last-child,
+.pyidm-stream-item:last-child {
+  border-bottom: none !important;
+}
+
+.armidm-stream-item:hover,
+.pyidm-stream-item:hover {
+  background: rgba(37, 99, 235, 0.22) !important;
+}
+
+.armidm-stream-title,
+.pyidm-stream-title {
+  font-weight: 600 !important;
+  color: #f1f5f9 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  max-width: 195px !important;
+  font-size: 12px !important;
+}
+
+.armidm-stream-meta,
+.pyidm-stream-meta {
+  font-size: 11px !important;
+  color: #38bdf8 !important;
+  font-weight: 600 !important;
+  background: rgba(56, 189, 248, 0.12) !important;
+  padding: 2px 7px !important;
+  border-radius: 6px !important;
+  white-space: nowrap !important;
+}

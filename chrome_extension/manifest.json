@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "ArmIDM Integration Module & Video Sniffer",
+  "version": "2.6.0",
+  "description": "Integrasi browser Chrome dengan aplikasi ArmIDM Desktop: pengambilalihan unduhan otomatis beserta Cookie/Session (Gofile, dll.), Speed Limiter, dan Video Sniffer.",
+  "permissions": [
+    "downloads",
+    "webRequest",
+    "cookies",
+    "storage",
+    "tabs",
+    "contextMenus",
+    "notifications",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}

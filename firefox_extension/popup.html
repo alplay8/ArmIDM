@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>ArmIDM Control Panel</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="brand">
+      <img src="icons/icon48.png" width="24" height="24" alt="ArmIDM">
+      <div>
+        <div class="title">ArmIDM Integration</div>
+        <div class="subtitle" id="server-status">Mengecek koneksi...</div>
+      </div>
+    </div>
+    <span class="speed-pill" id="total-speed-pill">0 KB/s</span>
+  </div>
+
+  <!-- Pengaturan Intersepsi & Speed Limiter -->
+  <div class="card">
+    <div class="row">
+      <label for="chk-intercept">Tangkap Unduhan Browser Otomatis</label>
+      <input type="checkbox" id="chk-intercept" checked>
+    </div>
+    <div class="row">
+      <label for="chk-floating">Tombol Floating Download Video</label>
+      <input type="checkbox" id="chk-floating" checked>
+    </div>
+    <hr class="sep">
+    <div class="row">
+      <label for="chk-speed-limit">⚡ Speed Limiter (KB/s):</label>
+      <div class="speed-controls">
+        <input type="checkbox" id="chk-speed-limit">
+        <input type="number" id="num-speed-kbps" value="1024" min="10" max="200000">
+        <button id="btn-apply-limit" class="btn-sm">Set</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tambah URL Cepat -->
+  <div class="card">
+    <div class="section-title">➕ Tambah URL Unduhan Cepat</div>
+    <div class="url-box">
+      <input type="text" id="inp-quick-url" placeholder="Tempel link file atau video di sini...">
+      <button id="btn-quick-dl" class="btn-primary">Download</button>
+    </div>
+  </div>
+
+  <!-- Daftar Video Terdeteksi di Tab Aktif -->
+  <div class="card">
+    <div class="section-title">🎬 Video Terdeteksi di Tab Ini (<span id="video-count">0</span>)</div>
+    <div id="video-list" class="list-container">
+      <div class="empty-msg">Belum ada stream video terdeteksi di tab ini. Putar video di halaman untuk mendeteksi.</div>
+    </div>
+  </div>
+
+  <!-- Daftar Unduhan Aktif di ArmIDM Desktop -->
+  <div class="card">
+    <div class="section-title">📥 Unduhan Aktif di ArmIDM Desktop</div>
+    <div id="tasks-list" class="list-container">
+      <div class="empty-msg">Tidak ada unduhan aktif.</div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

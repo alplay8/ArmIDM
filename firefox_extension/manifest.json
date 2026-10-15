@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+  "name": "ArmIDM Integration Module & Video Sniffer (Firefox)",
+  "version": "2.7.0",
+  "description": "Integrasi penuh Mozilla Firefox dengan aplikasi ArmIDM Desktop: intersepsi unduhan jaringan otomatis (termasuk VikingFile, Gofile, MediaFire), Speed Limiter, dan Video Sniffer.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "armidm-extension@opensource.local",
+      "strict_min_version": "91.0"
+    }
+  },
+  "permissions": [
+    "downloads",
+    "webRequest",
+    "webRequestBlocking",
+    "cookies",
+    "storage",
+    "tabs",
+    "contextMenus",
+    "notifications",
+    "alarms",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "ArmIDM Control Panel",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}

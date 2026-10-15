@@ -1,0 +1,150 @@
+body {
+  width: 370px;
+  margin: 0;
+  padding: 10px;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  font-size: 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.speed-pill {
+  background: #1e3a8a;
+  color: #93c5fd;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 7px;
+  padding: 9px 10px;
+  margin-bottom: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.sep {
+  border: 0;
+  border-top: 1px solid #334155;
+  margin: 7px 0;
+}
+
+.speed-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.speed-controls input[type="number"] {
+  width: 68px;
+  background: #0f172a;
+  color: #fff;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  padding: 3px 5px;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #38bdf8;
+}
+
+.url-box {
+  display: flex;
+  gap: 6px;
+}
+
+.url-box input {
+  flex: 1;
+  background: #0f172a;
+  color: #fff;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  padding: 5px 7px;
+}
+
+.btn-primary, .btn-sm {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary:hover, .btn-sm:hover {
+  background: #1d4ed8;
+}
+
+.list-container {
+  max-height: 125px;
+  overflow-y: auto;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 4px;
+  border-bottom: 1px solid #334155;
+}
+
+.item-row:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: 600;
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-sub {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.empty-msg {
+  color: #64748b;
+  font-style: italic;
+  font-size: 11px;
+  padding: 4px 0;
+}
