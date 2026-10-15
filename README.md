@@ -2,6 +2,11 @@
 
 **ArmIDM** adalah aplikasi *Download Manager* desktop berbasis Python (Tkinter/TTK) dengan tata letak dan fitur lengkap layaknya **Internet Download Manager (IDM)** tanpa lisensi/batasan *trial*, dilengkapi ekstensi browser untuk **Google Chrome, Mozilla Firefox, Microsoft Edge, Brave, Opera, dan Vivaldi**.
 
+<img width="1427" height="915" alt="image" src="https://github.com/user-attachments/assets/dd9d94eb-ccfb-4152-8d10-0693489b4cfd" />
+
+<p align="center"><img width="765" height="552" alt="image" src="https://github.com/user-attachments/assets/19682881-9f5f-4a58-aec1-7c84f56e7b33" /></p>
+
+
 ---
 
 ## ✨ Fitur Utama
@@ -12,6 +17,9 @@
 - **🎬 Video Sniffer & YouTube Multi-Resolusi**: Menampilkan tombol melayang **"⬇ Download Video Ini (ArmIDM)"** di atas pemutar video web (termasuk YouTube *Watch* & *Shorts* pada resolusi 1080p, 720p, 480p, 360p, dan Audio Only, serta stream HLS `.m3u8`).
 - **🍪 Dukungan Cookie & Sesi Otomatis**: Meneruskan *Cookie* autentikasi dan *Referer* dari browser secara otomatis untuk mengunduh dari situs penyimpanan seperti **Gofile.io**, **VikingFile**, **MediaFire**, dan **Pixeldrain**.
 - **📥 Native Windows System Tray & Auto-Run Startup**: Berjalan otomatis di *System Tray* saat komputer dinyalakan tanpa memerlukan pustaka eksternal tambahan.
+
+<p align="center"><img width="506" height="532" alt="image" src="https://github.com/user-attachments/assets/002d7c4d-fcb7-42df-97fe-dafd69fcf293" /></p>
+
 
 ---
 
